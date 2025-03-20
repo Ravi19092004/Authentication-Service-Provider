@@ -34,15 +34,29 @@ const AdminPage = () => {
                     <div className="flex items-center gap-x-2">
                         <Server className="h-5 w-5 text-gray-500" /> {/* Add an icon */}
                         <p className="text-sm font-semibold text-gray-700">
+                            Admin-Only API Route
+                        </p>
+                    </div>
+                    <Button 
+                        onClick={onApiRouteClick} 
+                        variant="black" // Use the new black variant
+                    >
+                        Click to test
+                    </Button>
+                </div>
+
+                <div className="flex flex-row items-center justify-between rounded-lg border border-gray-200 bg-gray-50/50 p-4 shadow-sm">
+                    <div className="flex items-center gap-x-2">
+                        <Server className="h-5 w-5 text-gray-500" /> {/* Add an icon */}
+                        <p className="text-sm font-semibold text-gray-700">
                             Admin-Only Server Action
                         </p>
                     </div>
                     <Button 
                         onClick={onApiRouteClick} 
-                        variant="outline" 
-                        className="text-sm font-medium text-gray-700 border-gray-300 hover:bg-gray-100"
+                        variant="black" // Use the new black variant
                     >
-                        Test Action
+                        Click to test
                     </Button>
                 </div>
             </CardContent>
